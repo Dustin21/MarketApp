@@ -64,13 +64,14 @@ CointegrationTest <- function(stockPairs){
 	
 	p4 <- acfPlot(dFrame2[,2], ggplot2 = TRUE)
 	
-
+	grid.arrange(arrangeGrob(p1, p2, ncol=2), arrangeGrob(p3, p4, ncol=2),
+							nrow = 2, ncol=1) 
 	
-	pushViewport(viewport(layout = grid.layout(2, 2)))
-	print(p1, vp = viewport(layout.pos.row = 1, layout.pos.col = 1))
-	print(p2, vp = viewport(layout.pos.row = 1, layout.pos.col = 2))
-	print(p3, vp = viewport(layout.pos.row = 2, layout.pos.col = 1))
-	print(p4, vp = viewport(layout.pos.row = 2, layout.pos.col = 2))
+	#pushViewport(viewport(layout = grid.layout(2, 2)))
+	#print(p1, vp = viewport(layout.pos.row = 1, layout.pos.col = 1))
+	#print(p2, vp = viewport(layout.pos.row = 1, layout.pos.col = 2))
+	#print(p3, vp = viewport(layout.pos.row = 2, layout.pos.col = 1))
+	#print(p4, vp = viewport(layout.pos.row = 2, layout.pos.col = 2))
 
 	
 }
