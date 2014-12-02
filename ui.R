@@ -1,11 +1,7 @@
 shinyUI(fluidPage(theme = "bootstrap.css",
 											 
-	
 	titlePanel(h1("Market App")),
-	
-	helpText("By: Dustin Johnson"),
-	
-	
+		
 	sidebarLayout(
 		
 		sidebarPanel( 
@@ -124,6 +120,7 @@ shinyUI(fluidPage(theme = "bootstrap.css",
 									 								 style = "color:lightblue")
 					)),
 					tabPanel("Diagnostics", plotOutput("plotD")), 
+					
 					tabPanel("Hedging", verbatimTextOutput("Hedging"))
 					
 				),
