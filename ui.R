@@ -1,7 +1,8 @@
 shinyUI(fluidPage(theme = "bootstrap.css",
 											 
-	titlePanel(h1("Market App")),
-		
+	
+	titlePanel(h1("Market App")),	
+	
 	sidebarLayout(
 		
 		sidebarPanel( 
@@ -65,9 +66,11 @@ shinyUI(fluidPage(theme = "bootstrap.css",
 				tabsetPanel(
 					tabPanel("Intro", 
 									 
-									h4("Welcome to the Market App.", style = "color:lightblue"), 
+									h4("Welcome to the Market App.", style = "color:lightblue"),
+									em("By: Dustin Johnson", style = "font-size:90%"),
 									 
 									 br(),
+									br(),
 									p("This App is very versatile and enables
 									 	you to compare and contrast two sources of time-series data by simply inputting their
 									 	ticker symbols! The financial and/or economic data may be retrieved from a veriety of 
@@ -97,7 +100,6 @@ shinyUI(fluidPage(theme = "bootstrap.css",
 									 	tags$li("In some occations the App may take some time to load, so please be patient." , style = "color:red")
 									 ),
 									
-									 br(),
 									 div("Be aware that", span("Stock A", style = "color:lightgreen"), "will be denoted
 									 		in", span("green", style = "color:lightgreen"), "while", span("Stock B", style = "color:orange"),
 									 		"will be denoted in", span("orange.", style = "color:orange")),

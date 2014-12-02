@@ -7,6 +7,7 @@ library("grid")
 library("gridExtra")
 library("reshape2")
 source("helpers.R")
+source("helpers2.R")
 source("na.stinterp.R")
 source("quickTSPlots.R")
 source("decomp.R")
@@ -85,7 +86,7 @@ shinyServer(function(input, output) {
 	
 	output$plotD <- renderPlot({
 		if(input$get == 0) return(NULL)
-		CointegrationTest(dataInput())
+		CointegrationTest2(dataInput())
 	}, bg="transparent")
 	
 	output$Hedging <- renderPrint({
