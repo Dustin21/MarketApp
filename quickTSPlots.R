@@ -6,7 +6,8 @@ quickTSPlots<-function(TS, ylab = '', ylim=c(-1,1),ggplot2=FALSE, ...)
 			theme(plot.background=element_blank(), panel.background = element_blank(),
 						axis.line = element_line(colour = "white"), panel.grid.minor = element_blank()) +
 			theme(axis.title.x = element_text(colour = "white"),
-						axis.title.y = element_text(colour = "white"), plot.title = element_text(colour = "white"))
+						axis.title.y = element_text(colour = "white"), plot.title = element_text(colour = "white")) +
+			ggtitle("Differenced TS")
 		
 		TS.acf<-acf(TS, plot=FALSE)
 		TS.pacf<-pacf(TS, plot=FALSE)
@@ -25,7 +26,8 @@ quickTSPlots<-function(TS, ylab = '', ylim=c(-1,1),ggplot2=FALSE, ...)
 			theme(plot.background=element_blank(), panel.background = element_blank(),
 						axis.line = element_line(colour = "white"), panel.grid.minor = element_blank()) +
 			theme(axis.title.x = element_text(colour = "white"),
-						axis.title.y = element_text(colour = "white"), plot.title = element_text(colour = "white"))
+						axis.title.y = element_text(colour = "white"), plot.title = element_text(colour = "white")) +
+			ggtitle("ACF")
 		
 		pacfPlot <- ggplot(data.frame(lag=TS.pacf$lag,pacf=TS.pacf$acf)) +
 			geom_hline(aes(yintercept=z,colour="green",linetype=type),hline.data) +
@@ -35,7 +37,8 @@ quickTSPlots<-function(TS, ylab = '', ylim=c(-1,1),ggplot2=FALSE, ...)
 			theme(plot.background=element_blank(), panel.background = element_blank(),
 						axis.line = element_line(colour = "white"), panel.grid.minor = element_blank()) +
 			theme(axis.title.x = element_text(colour = "white"),
-						axis.title.y = element_text(colour = "white"), plot.title = element_text(colour = "white"))
+						axis.title.y = element_text(colour = "white"), plot.title = element_text(colour = "white")) +
+			ggtitle("PACF")
 		
 		
 		grid.arrange(timeSeriesPlot, arrangeGrob(acfPlot, pacfPlot, ncol=2),

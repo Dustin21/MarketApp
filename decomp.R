@@ -11,6 +11,7 @@ decomp <- function(series,frequency, col = "green"){
 		theme(plot.background=element_blank(), panel.background = element_blank(),
 					axis.line = element_line(colour = "white"), panel.grid.minor = element_blank()) +
 		theme(axis.title.x = element_text(colour = "white"),
-					axis.title.y = element_text(colour = "white"), plot.title = element_text(colour = "white"))
+					axis.title.y = element_text(colour = "white"), plot.title = element_text(colour = "white")) +
+		ggtitle("Decomposition of TS into Periodic, Trend, and Residual Factors")
 	}
 	

@@ -118,9 +118,11 @@ shinyUI(fluidPage(theme = "bootstrap.css",
 					
 					tabPanel("Stock B", plotOutput("plotB")),
 					tabPanel("B Decomposition", plotOutput("plotBDecomp"),
-									 tags$li(helpText("Adjust the frequency to identify any noticable periodicity in real-time.",
-									 								 style = "color:lightblue")
-					)),
+									 br(),
+									 tags$ul(
+									 	tags$li(helpText("Adjust the frequency to identify any noticable periodicity in real-time.",
+									 									 style = "color:lightblue"))
+									 )),
 					tabPanel("Diagnostics", plotOutput("plotD")), 
 					
 					tabPanel("Hedging", verbatimTextOutput("Hedging"))

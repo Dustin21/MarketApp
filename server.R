@@ -49,7 +49,7 @@ shinyServer(function(input, output) {
 		colnames(df) <- c("a", "b")
 		ggplot(df, aes(time(a),a)) + geom_line(colour = "green") + 
 			geom_line(aes(time(b), b), colour = "darkorange") + 
-			ylab("Stock #1 and Stock #2") +
+			ylab("Stock A & Stock B") +
 			xlab("Time") +
 			ggtitle("Adj. Closing Prices of Stock A and B") +
 			theme(plot.background=element_blank(), panel.background = element_blank(),
