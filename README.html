@@ -64,6 +64,13 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </ul>
 <p>This means you can compare economic indicators with financial data, or analyse the FOREX markets with ease. Types of analyses provided in the app are general trends, seasonalities, cointegration of two stocks, and a hedging ratio to mitigate porfolio risk. Some features of the app are not yet added, such as tables summarising the data in question (historical volatility, GARCH fits, projections, and trends), although all figures are nearly fully functional. Some parts may be slow and some code are likely less efficient than some other methods, but hopefully you will find some use in the app!</p>
 <p>Check out the <a href="https://dustin21.shinyapps.io/MarketApp/">Market App</a> for further instructions and details.</p>
+<div id="instructions" class="section level3">
+<h3>Instructions</h3>
+<ol style="list-style-type: decimal">
+<li>Run locally by cloning into a directory and click <code>Run App</code> when either <code>server.R</code> or <code>ui.R</code> is open. You can also run the app with the command <code>shiny::runApp('Gapminder-app')</code> in the console.</li>
+<li>Check it out in your web browser by clicking <a href="https://dustin21.shinyapps.io/MarketApp/">here</a>.</li>
+</ol>
+</div>
 <div id="reflections" class="section level3">
 <h3>Reflections</h3>
 <p>This homework was tedious, but rewarding. I had many issues as I moved along into more complicated areas. First, you may notice that I have some help functions that are nearly the same, with minor differences, or some attributes commented out. The reason for this was that I attempted to create a function that accomplished everything, such as plotting and print output in one go, but Shiny did not like this. I had to adjust my functions to suit the specific need of <code>renderPlot</code> or <code>renderPrint</code>, for instance, and resave them to get everything running as I wanted. The same issue occured with <code>quickTSPlots.R</code> and setting a seperate variable in the function to select plot colour. To get this working, I had to resave the same function twice, with the only difference being the plot colour. I am sure there are much more efficient ways of solving this problem, but I was happy to get this working in the end nonetheless. If anyone has insight into this, please enlighten me.</p>

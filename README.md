@@ -14,6 +14,11 @@ This means you can compare economic indicators with financial data, or analyse t
 
 Check out the [Market App](https://dustin21.shinyapps.io/MarketApp/) for further instructions and details.
 
+### Instructions
+
+1. Run locally by cloning into a directory and click `Run App` when either `server.R` or `ui.R` is open. You can also run the app with the command `shiny::runApp('Gapminder-app')`  in the console.
+2. Check it out in your web browser by clicking [here](https://dustin21.shinyapps.io/MarketApp/).
+
 ### Reflections
 This homework was tedious, but rewarding. I had many issues as I moved along into more complicated areas. First, you may notice that I have some help functions that are nearly the same, with minor differences, or some attributes commented out. The reason for this was that I attempted to create a function that accomplished everything, such as plotting and print output in one go, but Shiny did not like this. I had to adjust my functions to suit the specific need of `renderPlot` or `renderPrint`, for instance, and resave them to get everything running as I wanted. The same issue occured with `quickTSPlots.R` and setting a seperate variable in the function to select plot colour. To get this working, I had to resave the same function twice, with the only difference being the plot colour. I am sure there are much more efficient ways of solving this problem, but I was happy to get this working in the end nonetheless. If anyone has insight into this, please enlighten me.
 
