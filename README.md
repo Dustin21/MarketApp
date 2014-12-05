@@ -16,7 +16,7 @@ Check out the [Market App](https://dustin21.shinyapps.io/MarketApp/) for further
 
 ### Instructions
 
-1. Run locally by cloning into a directory and click `Run App` when either `server.R` or `ui.R` is open. You can also run the app with the command `shiny::runApp('Gapminder-app')`  in the console.
+1. Run locally by cloning into a directory and click `Run App` when either `server.R` or `ui.R` is open. You can also run the app with the command `shiny::runApp('MarketApp')`  in the console.
 2. Check it out in your web browser by clicking [here](https://dustin21.shinyapps.io/MarketApp/).
 
 ### Reflections
