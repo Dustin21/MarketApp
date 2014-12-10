@@ -1,7 +1,7 @@
 shinyUI(fluidPage(theme = "bootstrap.css",
 											 
 	
-	titlePanel(h1("Market App")),	
+	h1(titlePanel("Market App")),	
 	
 	sidebarLayout(
 		
