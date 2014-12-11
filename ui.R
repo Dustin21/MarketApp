@@ -15,7 +15,7 @@ shinyUI(fluidPage(theme = "bootstrap.css",
 								value = "RDS-A"),
 			
 			selectInput("source1", "Select the data source:",
-									choices = c("yahoo", "google", "FRED", "Oanda", "MySQL", "csv", "RData"),
+									choices = c("yahoo", "google", "FRED"),
 									selected = "yahoo"),
 						
 			br(),
@@ -27,7 +27,7 @@ shinyUI(fluidPage(theme = "bootstrap.css",
 								value = "RDS-B"),
 			
 			selectInput("source2", "Select the data source:",
-									choices = c("yahoo", "google", "FRED", "Oanda", "MySQL", "csv", "RData"),
+									choices = c("yahoo", "google", "FRED"),
 									selected = "yahoo"),
 			
 			
